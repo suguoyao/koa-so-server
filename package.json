@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start_server": "node ./server/app.js",
-    "start": "npm run start_server"
+    "dev": "node ./server/app.js",
+    "start": "yarn run dev",
+    "prod": "pm2 start pm2.conf.json && pm2 logs",
+    "stop": "pm2 stop pm2-koa-so-server && pm2 delete pm2-koa-so-server"
   },
   "author": "suguoyao <suguoyao888@gmail.com>",
   "license": "ISC",

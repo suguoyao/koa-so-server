@@ -1,0 +1,14 @@
+{
+  "apps": {
+    "name": "pm2-koa-so-server",
+    "script": "./server/app.js",
+    "watch": true,
+    "ignore_watch": [
+      "node_modules",
+      "logs"
+    ],
+    "error_file": "../logs/server-err.log",
+    "out_file": "../logs/server-out.log",
+    "log_date_format": "YYYY-MM-DD HH:mm:ss"
+  }
+}
