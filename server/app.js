@@ -16,5 +16,5 @@ app.use(bodyParser())
 app.use(routers.routes()).use(routers.allowedMethods())
 
 // 监听启动端口
-app.listen(config.port)
+app.listen(config.port, '0.0.0.0')
 console.log(`the server is start at port ${config.port}`)
