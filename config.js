@@ -3,7 +3,7 @@
  */
 const config = {
   port: 3001,
-  soAPiUrl: 'https://api.stackexchange.com/',
+  soAPiUrl: 'https://api.stackexchange.com',
   database: {
     DATABASE: '',
     USERNAME: 'root',
